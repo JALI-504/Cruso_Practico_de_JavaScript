@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <header>
+        <h1>FIGURAS GEOMÉTRICAS</h1>
+        <p>Este es el primer taller practico del curso deJs</p>
+    </header>
+
+    <section>
+        <h2>Calcular el Area y Perimetro de un Cuadrado</h2>
+        <form action="">
+            <label for="inputCuadrado">
+                Escribe cuanto mide cada lado del Cuadrado: 
+            </label>
+            <br><br>
+            <input type="number" id="inputCuadrado" placeholder="Escriba cuanto mide el lado de nuestro cuadrado">
+            <br><br>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
+        </form>
+
+        <h2>Calcular el Area y Perimetro de un Triangulo</h2>
+        <form action="">
+            <label for="">
+                Escribe cuanto mide cada lado del triangulo para calcular su Perimetro: 
+            </label>
+            <br><br>
+            <input type="number" id="lado1" placeholder="Lado A del triangulo">
+            <input type="number" id="lado2" placeholder="Lado de B del triangulo">
+            <input type="number" id="base" placeholder="Base del triangulo">
+            <br><br>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
+        </form>
+        <br>
+        <form action="">
+            <label>Ingrese la altura y la base para calcular el Área:</label>
+            <br><br>
+            <input type="number" id="base2" placeholder="Base del triangulo">
+            <input type="number" id="altura" placeholder="Altura del triangulo">
+            <br><br>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
+        </form>
+
+        <h2>Calcular el Diametro, Circungerencia y Área de un Circulo</h2>
+        <form action="">
+            <label for="radio">
+                Escribe cuanto mide cada lado del triangulo para calcular su Perimetro: 
+            </label>
+            <br><br>
+            <input type="number" id="radio" placeholder="Radio del Circulo">
+            <br><br>
+            <button type="button" onclick="calcularRadioCirculo()">Calcular</button>
+        </form>
+
+    </section>
+
+    <script src="/figurasGeometricas.js">
+        
+    </script>
+</body>
+</html>

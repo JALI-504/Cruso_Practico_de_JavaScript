@@ -25,6 +25,17 @@
             <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perimetro</button>
         </form>
 
+        <h2>Calcular el Diametro, Circungerencia y Área de un Circulo</h2>
+        <form action="">
+            <label for="radio">
+                Escribe cuanto mide cada lado del triangulo para calcular su Perimetro: 
+            </label>
+            <br><br>
+            <input type="number" id="radio" placeholder="Radio del Circulo">
+            <br><br>
+            <button type="button" onclick="calcularRadioCirculo()">Calcular</button>
+        </form>
+
         <h2>Calcular el Area y Perimetro de un Triangulo</h2>
         <form action="">
             <label for="">
@@ -32,7 +43,7 @@
             </label>
             <br><br>
             <input type="number" id="lado1" placeholder="Lado A del triangulo">
-            <input type="number" id="lado2" placeholder="Lado de B del triangulo">
+            <input type="number" id="lado2" placeholder="Lado B del triangulo">
             <input type="number" id="base" placeholder="Base del triangulo">
             <br><br>
             <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perimetro</button>
@@ -47,16 +58,19 @@
             <button type="button" onclick="calcularAreaTriangulo()">Calcular Area</button>
         </form>
 
-        <h2>Calcular el Diametro, Circungerencia y Área de un Circulo</h2>
+        <h2>Triangulos Segun sus lados</h2>
         <form action="">
-            <label for="radio">
-                Escribe cuanto mide cada lado del triangulo para calcular su Perimetro: 
+            <label for="">
+                Escribe cuanto mide cada lado del triangulo para calcular su tipo: 
             </label>
             <br><br>
-            <input type="number" id="radio" placeholder="Radio del Circulo">
+            <input type="number" id="l1" placeholder="Lado A del triangulo">
+            <input type="number" id="l2" placeholder="Lado B del triangulo">
+            <input type="number" id="l3" placeholder="Lado C del triangulo">
             <br><br>
-            <button type="button" onclick="calcularRadioCirculo()">Calcular</button>
+            <button type="button" onclick="calcularTipoTriangulo()">Calcular</button>
         </form>
+
 
     </section>
 

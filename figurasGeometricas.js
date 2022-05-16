@@ -38,56 +38,6 @@ function calcularPerimetroCuadrado(){
 }
 console.groupEnd();
 
-// CODIGO DEL TRIANGULO ////////////
-console.group("Triangulo");
-
-// const baseTriangulo = 4;
-// const ladoA = 6;
-// const ladoB = 6;
-// const altura = 5.5;
-// const perimetroTriangulo = baseTriangulo + ladoA + ladoB;
-// const areaTriangulo = (baseTriangulo*altura)/2;
-
-// console.log("Cada uno de los lados del triangulos mie: A= "+ladoA+" cm, "+" B="+ladoB+" cm y "+"C="+baseTriangulo +" cm ");
-// console.log("El perimetro del Triangulo es: "+perimetroTriangulo+" cm");
-// console.log("La altura del triangulo es: "+altura+" cm");
-// console.log("El Área del triangulo es: "+areaTriangulo+" cm^2");
-
-function perimetroTriangulo(lado1, lado2, base){
-    return lado1+lado2+base;
-}
-function areaTriangulo(base,altura){
-    return (base*altura)/2;
-}
-
-/////////// Funciones para el Triangulo //////////////////
-
-function calcularPerimetroTriangulo(){
-    const inputLado1 = document.getElementById("lado1");
-    const inputLado2 = document.getElementById("lado2");
-    const inputBase = document.getElementById("base");
-    const valueLado1 = (inputLado1.value);
-    const valueLado2 = Number(inputLado2.value);
-    const valueBase = Number(inputBase.value);
-
-    const perimetro = perimetroTriangulo(valueLado1,valueLado2,valueBase);
-
-    alert("El Perimetro es de: "+parseFloat(perimetro).toFixed(2));
-}
-
-function calcularAreaTriangulo(){
-    const inputAltura = document.getElementById("base2");
-    const inputBase = document.getElementById("altura");
-    const valueBase = inputBase.value;
-    const valueAltura = inputAltura.value;
-
-    const areaT = areaTriangulo(valueBase,valueAltura);
-
-    alert("El área es de: "+parseFloat(areaT).toFixed(2));
-}
-
-console.groupEnd();
-
 // CIRCULO ///////////////////
 
 console.group("Circulo");
@@ -134,5 +84,78 @@ function calcularRadioCirculo(){
 
 console.groupEnd();
 
+// CODIGO DEL TRIANGULO ////////////
+console.group("Triangulo");
 
-///////////Llamar funciones desde HTML //////////////////
+// const baseTriangulo = 4;
+// const ladoA = 6;
+// const ladoB = 6;
+// const altura = 5.5;
+// const perimetroTriangulo = baseTriangulo + ladoA + ladoB;
+// const areaTriangulo = (baseTriangulo*altura)/2;
+
+// console.log("Cada uno de los lados del triangulos mie: A= "+ladoA+" cm, "+" B="+ladoB+" cm y "+"C="+baseTriangulo +" cm ");
+// console.log("El perimetro del Triangulo es: "+perimetroTriangulo+" cm");
+// console.log("La altura del triangulo es: "+altura+" cm");
+// console.log("El Área del triangulo es: "+areaTriangulo+" cm^2");
+
+function perimetroTriangulo(lado1, lado2, base){
+    return lado1+lado2+base;
+}
+function areaTriangulo(base,altura){
+    return (base*altura)/2;
+}
+
+function tipoTriangulo(l1,l2,l3){
+    if((l1 == l2 && l1 == l3)||(l2 == l1 && l2 == l3)||(l3 == l1 && l3 == l2)) {
+        return  "Equilatero";
+    } else if ((l1 == l2 && l1 != l3)||(l1 == l3 && l1 != l2)||(l2 == l3 && l2 != l1)||(l3 == l1 && l3 != l2)) {
+        return "Isosceles";
+    } else { 
+        return "Escaleno";
+    }
+    return
+}
+
+/////////// Funciones para el Triangulo //////////////////
+
+function calcularPerimetroTriangulo(){
+    const inputLado1 = document.getElementById("lado1");
+    const inputLado2 = document.getElementById("lado2");
+    const inputBase = document.getElementById("base");
+    const valueLado1 = (inputLado1.value);
+    const valueLado2 = Number(inputLado2.value);
+    const valueBase = Number(inputBase.value);
+
+    const perimetro = perimetroTriangulo(valueLado1,valueLado2,valueBase);
+
+    alert("El Perimetro es de: "+parseFloat(perimetro).toFixed(2));
+}
+
+function calcularAreaTriangulo(){
+    const inputAltura = document.getElementById("base2");
+    const inputBase = document.getElementById("altura");
+    const valueBase = inputBase.value;
+    const valueAltura = inputAltura.value;
+
+    const areaT = areaTriangulo(valueBase,valueAltura);
+
+    alert("El área es de: "+parseFloat(areaT).toFixed(2));
+}
+
+function calcularTipoTriangulo(){
+    const inputLado1 = document.getElementById("l1");
+    const inputLado2 = document.getElementById("l2");
+    const inputLado3 = document.getElementById("l3");
+    const valueLado1 = Number(inputLado1.value);
+    const valueLado2 = Number(inputLado2.value);
+    const valueLado3 = Number(inputLado3.value);
+
+    const tipo = tipoTriangulo(valueLado1,valueLado2,valueLado3);
+
+    alert("El triangulo es de tipo "+tipo);
+}
+
+console.groupEnd();
+
+

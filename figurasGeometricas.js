@@ -77,6 +77,7 @@ function calcularRadioCirculo(){
     const diametro = diametroCirculo(valueDiametro);
     const circunferencia = perimetroCirculo(valueCircunferencia);
     const area = areaCirculo(valueArea);
+    
     alert("El diametro es de: "+parseFloat(diametro).toFixed(2));
     alert("La circunfernecia es de: "+parseFloat(circunferencia).toFixed(2));
     alert("El area es de: "+parseFloat(area).toFixed(2));

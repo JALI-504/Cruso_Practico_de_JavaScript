@@ -12,7 +12,9 @@ function calcularMediaAritmetica(lista){
 
 const lista1 = [
      800,
-     1,80,1500,
+     1,
+     80,
+     1500,
      200,
      100,
      500,
